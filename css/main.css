@@ -9900,27 +9900,75 @@ h3 {
 }
 
 .vw-150 {
-  height: 150vw;
+  width: 150vw;
 }
 
 .vw-125 {
-  height: 125vw;
+  width: 125vw;
 }
 
 .vw-100 {
-  height: 100vw;
+  width: 100vw;
 }
 
 .vw-75 {
-  height: 75vw;
+  width: 75vw;
 }
 
 .vw-50 {
-  height: 50vw;
+  width: 50vw;
 }
 
 .vw-25 {
-  height: 25vw;
+  width: 25vw;
+}
+
+.min-vh-150 {
+  min-height: 150vh;
+}
+
+.min-vh-125 {
+  min-height: 125vh;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+.min-vh-50 {
+  min-height: 50vh;
+}
+
+.min-vh-25 {
+  min-height: 25vh;
+}
+
+.min-vw-150 {
+  min-width: 150vw;
+}
+
+.min-vw-125 {
+  min-width: 125vw;
+}
+
+.min-vw-100 {
+  min-width: 100vw;
+}
+
+.min-vw-75 {
+  min-width: 75vw;
+}
+
+.min-vw-50 {
+  min-width: 50vw;
+}
+
+.min-vw-25 {
+  min-width: 25vw;
 }
 
 .p-relative {
@@ -10073,6 +10121,10 @@ h3 {
 
 body {
   overflow-x: hidden;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

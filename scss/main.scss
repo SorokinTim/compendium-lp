@@ -14,7 +14,19 @@ $theme-colors: (
 
 @each $item in 150,125,100,75,50,25 {
   .vw-#{$item} {
-    height: #{$item}vw;
+    width: #{$item}vw;
+  }
+}
+
+@each $item in 150,125,100,75,50,25 {
+  .min-vh-#{$item} {
+    min-height: #{$item}vh;
+  }
+}
+
+@each $item in 150,125,100,75,50,25 {
+  .min-vw-#{$item} {
+    min-width: #{$item}vw;
   }
 }
 
@@ -55,3 +67,8 @@ $theme-colors: (
 body {
   overflow-x: hidden;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
