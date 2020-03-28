@@ -1,0 +1,57 @@
+$theme-colors: (
+        "primary": #5884c5,
+        "dark": #505050,
+        "light": #e5e5e5
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@each $item in 150,125,100,75,50,25 {
+  .vh-#{$item} {
+    height: #{$item}vh;
+  }
+}
+
+@each $item in 150,125,100,75,50,25 {
+  .vw-#{$item} {
+    height: #{$item}vw;
+  }
+}
+
+@each $item in relative, absolute, fixed {
+  .p-#{$item} {
+    position: #{$item};
+  }
+}
+
+@each $item in left, right, top, bottom {
+  .p-#{$item} {
+    #{$item}: 0;
+  }
+}
+
+@for $i from 1 through 5 {
+  .rounded-#{$i} {
+    border-radius: (0.25rem * $i);
+  }
+}
+
+@for $i from 1 through 5 {
+  @each $y in top, bottom {
+    @each $x in left, right {
+      .rounded-#{$y}-#{$x}-#{$i} {
+        border-#{$y}-#{$x}-radius: (0.25rem * $i);
+      }
+    }
+  }
+}
+
+@for $i from 1 through 5 {
+  .font-size-#{$i} {
+    font-size: (0.75rem + 0.25rem * $i);
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
